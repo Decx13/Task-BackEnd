@@ -4,15 +4,21 @@ const sequelize = new Sequelize('backend_task', 'root', '1234', {
     dialect: 'mysql'
 });
 
-const User = sequelize.define('User', {
-  username: {
+const Products = sequelize.define('Product', {
+  Productname: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  password: {
-    type: DataTypes.STRING,
+  PId: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
+  PValue: {
+    type: DataTypes.DOUBLE,
     allowNull: false
   }
+
+
 });
 
-module.exports = User;
+module.exports = Products;
