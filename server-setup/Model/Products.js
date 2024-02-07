@@ -9,10 +9,6 @@ const Products = sequelize.define('Product', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  PId: {
-    type: DataTypes.INTEGER,
-    allowNull: false
-  },
   PValue: {
     type: DataTypes.DOUBLE,
     allowNull: false
