@@ -1,8 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = new Sequelize('backend_task', 'root', '1234', {
-    host: 'localhost',
-    dialect: 'mysql'
-});
+const sequelize = new Sequelize('mysql://root:1234@localhost:3306/backend_task');
 
 const User = sequelize.define('User', {
   username: {
